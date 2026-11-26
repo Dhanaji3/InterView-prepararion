@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en" data-theme="light">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#f6f7fb" />
+    <meta name="description" content="Your senior frontend interview workspace: JavaScript, TypeScript, Vue, Nuxt, architecture, real-world scenarios and coding challenges with explained solutions." />
+    <title>InterviewPrep Pro — Your next level starts here</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=Sora:wght@500;600;700;800&display=swap" rel="stylesheet" />
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 40 40'%3E%3Crect width='40' height='40' rx='12' fill='%236353e8'/%3E%3Ctext x='20' y='26' text-anchor='middle' font-family='monospace' font-size='20' fill='white'%3E%26lt;/%26gt;%3C/text%3E%3C/svg%3E" />
+    <link rel="stylesheet" href="styles.css" />
+    <script src="senior-content.js" defer></script>
+    <script src="coding-content.js" defer></script>
+    <script src="script.js" defer></script>
+    <script src="study-core.js" defer></script>
+    <script src="app.js" defer></script>
+  </head>
+  <body>
+    <a class="skip-link" href="#main">Skip to workspace</a>
+    <header class="topbar">
+      <div class="topbar-inner">
+        <a class="brand" href="#overview" aria-label="InterviewPrep Pro overview"><span class="brand-mark" aria-hidden="true">&lt;/&gt;</span><span>InterviewPrep<span class="brand-pro">PRO</span></span></a>
+        <form id="global-search-form" class="global-search" role="search">
+          <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="10.8" cy="10.8" r="6.8" /><path d="m16 16 4 4" /></svg>
+          <label class="sr-only" for="global-search">Search all questions and solutions</label>
+          <input id="global-search" type="search" placeholder="Search anything. Closures, SSR, system design…" autocomplete="off" />
+          <kbd aria-hidden="true">/</kbd><button type="submit" class="search-submit" aria-label="Search all questions">↵</button>
+        </form>
+        <div class="topbar-actions"><span class="track-pill"><span class="status-dot"></span> Senior frontend</span><button type="button" class="icon-button" id="theme-toggle" aria-label="Switch to dark theme" aria-pressed="false"></button><span class="avatar" aria-label="Your local workspace">You</span></div>
+      </div>
+    </header>
+    <div class="nav-wrap">
+      <nav class="workspace-nav" aria-label="Preparation workspace">
+        <div id="workspace-tabs" class="workspace-tabs" role="tablist" aria-label="Workspace sections">
+          <button type="button" id="tab-overview" role="tab" aria-selected="true" aria-controls="view-overview" data-view="overview">Overview</button>
+          <button type="button" id="tab-topics" role="tab" aria-selected="false" aria-controls="view-topics" tabindex="-1" data-view="topics">Topics</button>
+          <button type="button" id="tab-scenarios" role="tab" aria-selected="false" aria-controls="view-scenarios" tabindex="-1" data-view="scenarios">Scenarios</button>
+          <button type="button" id="tab-coding" role="tab" aria-selected="false" aria-controls="view-coding" tabindex="-1" data-view="coding">Coding Lab</button>
+          <button type="button" id="tab-mock" role="tab" aria-selected="false" aria-controls="view-mock" tabindex="-1" data-view="mock">Mock Interview</button>
+          <button type="button" id="tab-plan" role="tab" aria-selected="false" aria-controls="view-plan" tabindex="-1" data-view="plan">Study Plan</button>
+          <button type="button" id="tab-saved" role="tab" aria-selected="false" aria-controls="view-saved" tabindex="-1" data-view="saved">Saved <span id="saved-count" class="nav-count">0</span></button>
+        </div><span class="nav-note">Built for your next chapter</span>
+      </nav>
+    </div>
+    <main id="main" class="page-shell" tabindex="-1">
+      <section id="view-overview" role="tabpanel" aria-labelledby="tab-overview" tabindex="0"></section>
+      <section id="view-topics" role="tabpanel" aria-labelledby="tab-topics" tabindex="0" hidden></section>
+      <section id="view-scenarios" role="tabpanel" aria-labelledby="tab-scenarios" tabindex="0" hidden></section>
+      <section id="view-coding" role="tabpanel" aria-labelledby="tab-coding" tabindex="0" hidden></section>
+      <section id="view-mock" role="tabpanel" aria-labelledby="tab-mock" tabindex="0" hidden></section>
+      <section id="view-plan" role="tabpanel" aria-labelledby="tab-plan" tabindex="0" hidden></section>
+      <section id="view-saved" role="tabpanel" aria-labelledby="tab-saved" tabindex="0" hidden></section>
+      <noscript><div class="empty-state"><h1>Enable JavaScript to open your workspace</h1><p>The question bank, search and local progress tools run entirely in your browser.</p></div></noscript>
+      <footer class="footer"><span><span class="footer-logo" aria-hidden="true">&lt;/&gt;</span> Less memorizing. More understanding.</span><span>JavaScript · TypeScript · Vue · Nuxt <span class="footer-separator">/</span> 5+ years</span></footer>
+    </main>
+    <div id="notification" class="notification" role="status" aria-live="polite"></div>
+    <div id="announcer" class="sr-only" role="status" aria-live="polite"></div>
+  </body>
+</html>
